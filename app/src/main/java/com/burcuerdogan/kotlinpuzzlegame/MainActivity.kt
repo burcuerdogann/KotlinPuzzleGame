@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         /* first we add some images in assets*/
+        //get Image Adapter
     }
 
     fun onImageCameraClicked(view: View) {}
