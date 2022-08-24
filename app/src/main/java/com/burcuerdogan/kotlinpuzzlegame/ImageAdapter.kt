@@ -54,15 +54,16 @@ class ImageAdapter (private val mContext: Context): BaseAdapter() {
     private fun getPicFromAsset(imageView: ImageView?, assetName: String): Bitmap? {
         val targetW = imageView!!.width
         val targetH = imageView!!.height
+
         return  if (targetW == 0 || targetH == 0){
             //view has no dimension set
             null
         } else try {
-            val 'is' = am.open("img/$assetName")
+            val `is` = am.open("img/$assetName")
             val bmOptions = BitmapFactory.Options()
             bmOptions.inJustDecodeBounds = true
 
-            BitmapFactory.decodeStream('is',
+            BitmapFactory.decodeStream(`is`,
                 Rect(-1,-1,-1,-1),
                 bmOptions)
 
@@ -76,7 +77,7 @@ class ImageAdapter (private val mContext: Context): BaseAdapter() {
             bmOptions.inJustDecodeBounds = false
             bmOptions.inSampleSize = scaleFactor
             bmOptions.inPurgeable = true
-            BitmapFactory.decodeStream('is',
+            BitmapFactory.decodeStream(`is`,
                 Rect(-1,-1,-1,-1),
                 bmOptions)
 
