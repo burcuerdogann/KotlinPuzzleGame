@@ -1,3 +1,3 @@
 # KotlinPuzzleGame
 
-Kotlin Puzzle Game
+Kotlin Puzzle Game (Android Game Development)
