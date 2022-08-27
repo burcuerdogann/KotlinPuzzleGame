@@ -1,5 +1,3 @@
 # KotlinPuzzleGame
 
-Kotlin Puzzle Game
-
-Bonus
+Android Development / Kotlin Tutorial - Bonus
